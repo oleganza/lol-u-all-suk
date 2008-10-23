@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'dm-core'
+require 'dm-validations'
+
 Merb::BootLoader.after_app_loads do
 end
 
