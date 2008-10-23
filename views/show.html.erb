@@ -1,0 +1,29 @@
+<html>
+  <head>
+      <title>Lol u all suk</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <link rel="stylesheet" href="/master.css?<%=rand%>">
+  </head>
+  <body>
+    <form id="search-rant" action="<%=url(:action => :search)%>">
+      You are reading rants on <input type="text" name="title" value="<%=@subject.title%>" />
+    </form>
+    
+    <form id="new-rant" action="<%=url(:action => :save, :id => @subject.id)%>">
+      <input type="text" name="line" value="" />
+      &nbsp;
+      <input type="submit" value="Post a rant" />
+    </form>
+    
+    <span id="back">
+      <a href="/">back</a>
+    </span>
+    
+    <div id="rants">
+      <% @rants.each do |rant| %>
+        <p><%=h rant.line %> 
+          <small><%=time_format(rant.created_at) %></small></p>
+      <% end %>
+    </div>
+  </body>
+</html>

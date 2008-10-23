@@ -1,0 +1,52 @@
+
+html, body {
+  font-size:100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color:black;
+  background:white;
+  margin:1em;
+  padding:1em;
+}
+
+a:link,
+a:visited {
+  color:black;
+}
+a:hover {
+  background:#dd0000;
+  color:white;
+}
+
+#back {
+  position:absolute;
+  top:0.7em;
+  left:0.8em;
+}
+
+  #back a:link,
+  #back a:visited {
+    color:#999;
+  }
+  #back a:hover {
+    color:white;
+  }
+
+
+small {
+  color:#ccc;
+  font-weight:bold;
+  font-size:0.7em;
+}
+
+#search-rant {
+  font-size:160%;
+}
+
+#search-rant input {
+  width:8em;
+  font-size:100%;
+}
+
+#new-rant input[type=text] {
+  width:25em;
+}

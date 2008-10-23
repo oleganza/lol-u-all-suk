@@ -1,0 +1,13 @@
+---
+:development: &defaults
+  :adapter: sqlite3
+  :database: loluallsuk_development.sqlite3
+  :encoding: utf8
+
+:test:
+  <<: *defaults
+  :database: loluallsuk_test.sqlite3
+
+:production:
+  <<: *defaults
+  :database: loluallsuk_production.sqlite3
